@@ -1,0 +1,111 @@
+<html>
+  <body>
+
+    <h1>HTML Forms and Input Chapter</h1>
+    <form action="">
+      First name: <input type="text" name="firstname" /><br />
+      Last name: <input type="text" name="lastname" />
+    </form>
+
+    <p>
+      <b>Note:</b> The form itself is not visible. Also note that the default width of a text field is 20 characters.
+    </p>
+
+    <h4>How to do a password field</h4>
+    <form action="">
+      Username: <input type="text" name="user" /><br />
+      Password: <input type="password" name="password" />
+    </form>
+
+    <p>
+      <b>Note:</b> The characters in a password field are masked (shown as asterisks or circles).
+    </p>
+
+    <h3>Forms are good for passing data to a server</h3>
+    <h4>Password Field</h4>
+    <form>
+      password: <input type="password" name="pwd" />
+    </form>
+
+    <h4>Radio Buttons</h4>
+    <form>
+      <input type="radio" name="sex" value="male" /> Male<br />
+      <input type="radio" name="sex" value="female" /> Female
+    </form>
+
+    <h4>Checkboxes</h4>
+    <form>
+      <input type="checkbox" name="vehicle" value="Bike" /> I have a bike<br />
+      <input type="checkbox" name="vehicle" value="Car" /> I have a car
+    </form>
+
+    <h4>Submit Button</h4>
+    <p>
+      This is the way to send information to a file to be prepared to send to the server
+    </p>
+    <form name="input" action="http://www.w3schools.com/html/html_form_action.asp" method="get">
+      Username: <input type="text" name="user" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h4>Drop down list</h4>
+    <form action="">
+      <select name="cars">
+	<option value="volvo">Volvo</option>
+	<option value="saab">Saab</option>
+	<option value="fiat" selected="selected">Fiat</option>
+	<option value="audi">Audi</option>
+      </select>
+    </form>
+
+    <h4>An unlimited lined text input</h4>
+    <textarea rows="10" cols="30">
+      The cat was playing in the garden.
+    </textarea>
+
+    <h4>A button</h4>
+    <form action="">
+      <input type="button" value="Hellow world!">
+    </form>
+
+    <h4>Fieldset around form-data</h4>
+    <form action="">
+      <fieldset>
+	<legend>Personal information:</legend>
+	Name: <input type="text" size="30" /><br />
+	E-mail: <input type="text" size="30" /><br />
+	Date of birth: <input type="text" size="10" />
+      </fieldset>
+      </form>
+
+    <h4>Form with text fields and a submitt button</h4>
+    <form name="input" action="http://www.w3schools.com/html/html_form_action.asp" method="get">
+      First name: <input type="text" name="FirstName" value="Mickey" /><br />
+      Last name: <input type="text" name="LastName" value="Mouse" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>
+      If you click the "submit" button, the form-data will be sent to a page called "html_form_action/asp".
+    </p>
+
+    <h4>Form with checkboxes</h4>
+    <form name="input" action="http://www.w3schools.com/html/html_form_action.asp" method="get">
+      <input type="checkbox" name="vehicle" value="Bike" /> I have a bike<br />
+      <input type="checkbox" name="vehicle" value="Car" /> I have a car <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <h4>Send e-mail to someone@example.com:</h4>
+    <form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+      Name:<br />
+      <input type="text" name="name" value="your name" /><br />
+      E-mail:<br />
+      <input type="text" name="mail" value="your email" /><br />
+      Comment:<br />
+      <input type="text" name="comment" value="your comment" size="50" /><br /><br />
+      <input type="submit" value="Send" />
+      <input type="reset" value="Reset" />
+    </form>
+
+  </body>
+</html>
