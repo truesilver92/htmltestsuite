@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <body>
+    <h1>HTML Object</h1>
+
+    <h4>You can request the specific plug-in to use with your site's media</h4>
+
+    <h4>Playing wave audio using quicktime</h4>
+    <object width="420" height="360" classid = "clsid:clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+      <param name="src" value="http://www.w3schools.com/html/liar.wav" />
+      <param name="controller" value="true" />
+    </object>
+
+    <h4>Playing SWF videos using flash</h4>
+
+    <object width="400" height="40" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/
+pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0">
+      <param name="SRC" value="http://www.w3schools.com/html/bookmark.swf">
+	     <embed src="http://www.w3schools.com/html/bookmark.swf" width="400" height="40"></embed>
+      </param>
+    </object>
+
+    <h4>Playing WMV Movies using windows media player</h4>
+
+    <object width="100%" height="100%" type="video/x-ms-asf" url="http://www.w3schools.com/html/3d.wmv" data="http://www.w3schools.com/html/3d.wmv" classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6">
+      <param name="url" value="http://www.w3schools.com/html/3d.wmv" />
+      <param name="filename" value="http://www.w3schools.com/html/3d.wmv" />
+      <param name="autostart" value="1" />
+      <param name="uiMode" value="full" />
+      <param name="autosize" value="1" />
+      <param name="playcount" value="1" />
+      <embed type="application/x-mplayer2" src="http://www.w3schools.com/html/3d.wmv" width="100%" height="100%" autostart="true" showcontrols="true" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" />
+    </object>
+
+  </body>
+</html>
