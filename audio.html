@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <h1>HTML Audio</h1>
+
+    <h4>You must add a lot of tricks to have audio work in all browsers and on all hardware</h4>
+
+    <h4>You can use the yahoo media player to make audio work</h4>
+    
+    <a href="http://www.w3schools.com/html/song.mp3">play song</a>
+    <script type="text/javascript" src="http://mediaplayer.yahoo.com/js" />
+
+    <h4>Playing audio in html</h4>
+
+    <audio controls="controls" height="50px" width="100px">
+      <source src="http://www.w3schools.com/html/song.mp3" type="audio/mpeg" />
+      <source src="http://www.w3schools.com/html/song.ogg" type="audio/ogg" />
+      <embed height="50px" width="100px" src="http://www.w3schools.com/html/song.mp3" />
+    </audio>
+
+    <h4>Using the embed element html5 only</h4>
+
+    <embed height="50px" width="100px" src="http://www.w3schools.com/html/song.mp3" />
+    
+    <h4>using the object element</h4>
+    
+    <object height="50px" width="100px" data="http://www.w3schools.com/html/song.mp3" />
+
+    <h4>Using the audio element</h4>
+
+    <audio controls="controls">
+      <source src="http://www.w3schools.com/html/song.mp3" type="audio/mpeg" />
+      <source src="http://www.w3schools.com/html/song.ogg" type="audio/ogg" />
+      Your browser does not support this audio
+    </audio>
+
+    <h4>The best cross platform html4 solution</h4>
+
+    <audio controls="controls" height="50px" width="100px">
+      <source src="http://www.w3schools.com/html/song.mp3" type="audio/mpeg" />
+      <source src="http://www.w3schools.com/html/song.ogg" type="audio/ogg" />
+      <embed height="50px" width="100px" src="http://www.w3schools.com/html/song.mp3" />
+    </audio>
+
+    <h4>Use google to do it</h4>
+
+    <embed type="application/x-shockwave-flash" wmode="transparent" src="http://www.google.com/reader/ui/3523697345-audio-player.swf?audioUrl=http://www.w3schools.com/html/song.mp3" height="27" width="320"></embed>
+
+  </body>
+</html>
