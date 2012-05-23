@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>HTML Video</h1>
+
+    <h4>You may use the embed tag html5+ only</h4>
+
+    <embed src="http://www.w3schools.com/html/intro.swf" height ="200" width="200" />
+
+    <h4>Using the object tag</h4>
+
+    <object data="http://www.w3schools.com/html/intro.swf" height="200" width="200" />
+
+    <h4>Using the video tag html5+ only</h4>
+
+    <video width="320" height="240" controls="controls">
+      <source src="http://www.w3schools.com/html/movie.mp4" type="video/mp4" />
+      <source src="http://www.w3schools.com/html/movie.ogg" type="video/ogg" />
+      <source src="http://www.w3schools.com/html/movie.webm" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+
+    <p>
+      The best solution is to combine the past techniques into fallbacks into eachother. The bad parts about this is that you have to convert your video into many different formats and the code is ugly
+    </p>
+
+    <h4>You may also use a hyperlink</h4>
+
+    <a href="http://www.w3schools.com/html/intro.swf">Play a video file</a>
+
+  </body>
+</html>
